@@ -1,32 +1,13 @@
 import React from "react";
+import GoodMatch from "./FormComponents/GoodMatch";
 
 class Form extends React.Component {
 	render() {
 		return (
 			<form>
+				<GoodMatch/>
 				<form>
-					<h5>What does Investment Look Like?</h5>
-						<div>
-							<label>
-								Self-Investor
-								<input type="radio" label="Self-Investor" name="investors"/>
-							</label>
-						</div>
-						<div>
-							<label>
-								Group-Investors
-								<input type="radio" value="Group-Investors" name="investors"/>	
-							</label>
-						</div>
-						<div>
-							<label>
-								Big Player Investors
-								<input type="radio" value="Big Player Investors" name="investors"/>
 
-							</label>
-						</div>
-				</form>
-				<form>
 					<h5>Is the Market Profitable?</h5>
 						<div>
 							<label>
@@ -64,21 +45,7 @@ class Form extends React.Component {
 				</div>
 				<div>
 					<h5>Good Match?</h5>
-						<form>
-							<div>
-								<label>
-								Yes
-									<input type="radio" label="yes" name="goodmatch"/>			
-								</label>
-							</div>
-							<div>
-								<label>
-									No
-									<input type="radio" label="no" name="goodmatch"/>			
-								</label>
-							</div>
-					</form>
-				</div><br/>
+
 				<button>See Risk Factor</button>
  			</form>
 			)
