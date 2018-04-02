@@ -1,6 +1,6 @@
 import React from "react";
 
-class Investor extends React.component {
+class Investor extends React.Component {
 	render() {
 		return (
 			<form>
